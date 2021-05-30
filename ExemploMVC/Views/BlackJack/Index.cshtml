@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "BlackJack";
+}
+
+<h1>Jogo BlackJack</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>
+                Jogador 1
+            </h3>
+            <br /><br />
+            <img alt="carta1" src="/images/0.png" height="350" width="250" name="cartas1" id="cartas1">
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_jogador_1" id="btn_jogador_1" disabled>
+                Jogar
+            </button>
+            <button type="button" class="btn btn-success" name="btn_parar_1" id="btn_parar_1" disabled>
+                Parar
+            </button>
+            <br><br>
+            <span id="vitoriasJogador1">0</span>
+            <span> Vitórias</span>
+        </div>
+        <div class="col-md-4">
+            <h3>
+                Partida
+            </h3>
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_start" id="btn_start" onclick="start()">
+                Iniciar
+            </button>
+            <br /><br />
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="pontuacao1">0</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default">X</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="badge badge-default" id="pontuacao2">0</span>
+                </div>
+            </div>
+            <div class="text-center mt-5 mr-5" >
+            <span id="numeroRodadas">1</span>/<span id="numeroMax">10</span>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+            <h3>
+                Jogador 2
+            </h3>
+            <br /><br />
+            <img alt="carta2" src="/images/0.png" height="350" width="250" name="cartas2" id="cartas2">
+            <br /><br />
+            <button type="button" class="btn btn-success" name="btn_jogador_2" id="btn_jogador_2" disabled>
+                Jogar
+            </button>
+            <button type="button" class="btn btn-success" name="btn_parar_2" id="btn_parar_2" disabled>
+                Parar
+            </button>
+            <br><br>
+            <span id="vitoriasJogador2">0</span><span> Vitórias</span>
+
+        </div>
+    </div>
+</div>
